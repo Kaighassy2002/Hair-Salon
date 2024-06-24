@@ -1,0 +1,12 @@
+.hover-brand{
+  transition: transform 0.3s ease-in-out;
+  color: rgb(193, 189, 189);
+}
+
+
+.hover-brand:hover{
+  /* background-color: rgb(46, 45, 45); */
+  color: white;
+  transform: scale(1.5);
+  rotate: 9deg;
+}

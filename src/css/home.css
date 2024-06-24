@@ -1,0 +1,56 @@
+.images{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.images:hover{
+    transform: scale(1.2) ;
+    
+}
+.anim-img{
+    /* width: 200px;
+  height: 200px; */
+  /* border-radius: 50%; */
+  animation: rotateImage 3s linear infinite alternate;
+}
+@keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  .text1{
+    animation: textBounceStretch 3s 1;
+    position: relative;
+  }
+  
+  @keyframes textBounceStretch {
+    0% {
+      color: white;
+      margin-bottom: -40px;
+    }
+    30% {
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+    }
+    85% {
+      letter-spacing: 8px;
+      margin-bottom: -40px;
+    }
+  }
+
+  .brand{
+    animation: fadeInText2 2s ease-in-out infinite alternate;
+  }
+  @keyframes fadeInText2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
