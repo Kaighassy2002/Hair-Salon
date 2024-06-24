@@ -138,11 +138,7 @@ function Home() {
         </section>
 
 
-        {/* <section className="d-flex justify-content-center align-items-center">
-        <img data-aos="zoom-in" className="rounded " height={'300px'} src={card} alt="" />
-        <img data-aos="zoom-in" className="rounded " height={'300px'} src={card} alt="" />
-        <div></div>
-        </section> */}
+        
 
        
       </div>

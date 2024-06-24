@@ -29,9 +29,7 @@ function CardFloting() {
                     </div>
 
                     <div class="card-front__bt ">
-                      {/* <p class="card-front__text-view   d-flex justify-content-center align-items-center inside-page__btn">
-                        View me
-                      </p> */}
+                      
                     </div>
                   </div>
                   <div className="card-back">
@@ -48,15 +46,7 @@ function CardFloting() {
 
               <div class="inside-page ">
               <img style={{height:"30vh",width:"100%"}} src={card} alt="" />
-                {/* <div class="inside-page__container">
-                                <h5 class="fs-6 bolder text-dark inside-page__heading--city">
-                                    For urban lovers
-                                </h5>
-                                <p class="fs-6 text-success">
-                                   As cities never sleep, there are always something going on, no matter what time!
-                                </p>
-                                <a  class="btn btn-success ">View deals</a>
-                            </div> */}
+               
               </div>
             </div>
           </div>
@@ -73,13 +63,11 @@ function CardFloting() {
                         style={{ height: "4.25rem" }}
                       ></i>
 
-                      {/* <h5 className="text-dark ">Services</h5> */}
+                     
                     </div>
 
                     <div class="card-front__bt ">
-                      {/* <p class="card-front__text-view   d-flex justify-content-center align-items-center inside-page__btn">
-                        View me
-                      </p> */}
+                     
                     </div>
                   </div>
                   <div className="card-back">
@@ -113,13 +101,11 @@ function CardFloting() {
                         style={{ height: "4.25rem" }}
                       ></i>
 
-                      {/* <h5 className="text-dark ">Services</h5> */}
+                      
                     </div>
 
                     <div class="card-front__bt">
-                      {/* <p class="card-front__text-view   d-flex justify-content-center align-items-center inside-page__btn">
-                        View me
-                      </p> */}
+                     
                     </div>
                   </div>
                   <div className="card-back">
@@ -136,15 +122,7 @@ function CardFloting() {
 
               <div class="inside-page ">
               <img style={{height:"30vh",width:"100%"}} src={card3} alt="" />
-                {/* <div class="inside-page__container">
-                                <h5 class="fs-6 bolder text-dark inside-page__heading--city">
-                                    For urban lovers
-                                </h5>
-                                <p class="fs-6 text-success">
-                                   As cities never sleep, there are always something going on, no matter what time!
-                                </p>
-                                <a  class="btn btn-success ">View deals</a>
-                            </div> */}
+               
               </div>
             </div>
           </div>
