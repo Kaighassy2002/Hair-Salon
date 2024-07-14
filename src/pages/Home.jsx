@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import CardFloting from "../components/CardFloting";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Button } from "react-bootstrap";
 
 
 function Home() {
@@ -24,21 +25,20 @@ function Home() {
     <>
       <div>
         
-       <div style={{backgroundImage: `url(${bg})`,
+       <div className="home" style={{backgroundImage: `url(${bg})`,
            height: "100vh",
            backgroundSize: "cover",backgroundAttachment:'fixed'}}>
             <Header/>
          
   
           <section style={{ height: "100vh" }}>
-            <div  className="d-flex justify-content-evenly align-items-center ">
-              <div>
+            <div  className="d-flex justify-content-evenly align-items-center  home-container">
+              <div className="">
                 <img
-                  className="pe-5 pb-4 "
+                  className="pe-5 pb-4 home-img1"
                   style={{
-                    height: "380px",
-                    // backgroundImage:
-                    //   "linear-gradient(90deg, rgba(145,144,140,1) 0%, rgba(45,44,44,1) 85%",
+                    // height: "380px",
+                    
                   }}
                   src={Person2}
                   alt=""
@@ -63,11 +63,10 @@ function Home() {
               <div>
                 {" "}
                 <img
-                  className="ps-5 pt-4"
+                  className=" home-img"
                   style={{
-                    height: "550px",
-                    // backgroundImage:
-                    //   "linear-gradient(90deg, rgba(145,144,140,1) 0%, rgba(45,44,44,1) 85%",
+                    // height: "550px",
+                    
                   }}
                   src={Person}
                   alt=""
@@ -83,13 +82,15 @@ function Home() {
        
         
         <section  style={{marginTop:"80px"}}>
-          <div  className="d-flex justify-content-evenly rounded mb-5 ">
+          <div  className="d-flex justify-content-evenly rounded mb-5 home-se2">
             
-            <div   data-aos="fade-right"  style={{
-                  height: "350px",
-                  width:"40%",
-                  backgroundColor:"#FAF9F6"
-                }} className=" p-5 rounded " > 
+            <div   data-aos="fade-right"
+              // style={{
+              //     height: "350px",
+              //     width:"40%",
+              //     backgroundColor:"#FAF9F6"
+              //   }}
+                 className=" p-5 rounded  home-sec-container" > 
               <h5
                 style={{
                   letterSpacing: "3px",
@@ -100,7 +101,7 @@ function Home() {
               >
                 NuLook
               </h5>
-              <p  className="mb-4">
+              <p  className="mb-4 home-sec2p">
                 a licensed professional trained to transform your hair while
                 boosting your confidence <br />
                 a person who is cut above the rest ,<br />
@@ -109,14 +110,15 @@ function Home() {
                 fab
               </p>
               <Link to={'/booking'} style={{textDecoration:'none'}}>
-              <button className="btn btn-outline-info d-grid  col-6 mx-auto">Take Appointment</button>
+              <Button variant="success">Take Appointment</Button>
+              
               </Link>
              
               
             </div>
-              <div>
+              <div className="home-sec2-img" >
               <img className="rounded images" height={'300px'} src={salon3} alt="" />
-              <div style={{height:"40vh",width:"87%",marginTop:'-53vh',marginLeft:"75%"}} className="bg-dark bg-opacity-25">
+              <div  style={{height:"40vh",width:"87%",marginTop:'-53vh',marginLeft:"75%"}} className="bg-dark bg-opacity-25 bg-bar">
              
             </div>
               </div>

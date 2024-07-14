@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
 }
-
+.cardfloat{
+height: 50vh;
+}
 .inside-page__btn {
   background-color: transparent;
  
@@ -19,9 +21,12 @@
   transition: all .3s ease;
   width: 90%;
   z-index: 10;
-  /* height: 100; */
+  height: 100;
 }
-
+.inside-page img{
+  height: 30vh;
+  width: 100%;
+}
 .inside-page__btn::before { 
   content: "";
   height: 100%;
@@ -36,15 +41,6 @@
 
 
 
-/* .card-section {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-} */
-
-/* A container to hold the flip card and the inside page */
 .card {
   
   height: 15rem;
@@ -173,5 +169,24 @@
 
 .card:hover .inside-page {
   box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 360px){
+  .cardfloat{
+    height: 110vh;
+  } 
+  .inside-page img{
+    height: 18vh;
+    
+  }
+  
+}
+@media screen and (min-width:360px) and (max-width:780px){
+  .cardfloat{
+    height: 100vh;
+  }
+  .inside-page img{
+    height: 20vh;
+   
+  }
 }
 

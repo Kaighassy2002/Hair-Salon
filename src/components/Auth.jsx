@@ -89,7 +89,7 @@ function Auth({ insideRegister }) {
             </Link>
 
             <div className="d-flex justify-content-center align-items-center">
-              <div className=" rounded shadow p-5 bg-dark-subtle w-50 ">
+              <div className=" rounded shadow p-5 bg-dark-subtle ">
                 <div className=" align-items-center">
                   <h5
                     style={{

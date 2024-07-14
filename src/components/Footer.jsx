@@ -5,7 +5,7 @@ function Footer() {
     <>
    
       <div className='p-3 bg-dark '>
-        <div className='footer d-flex justify-content-evenly align-items-center'>
+        <div className='footer d-flex justify-content-evenly align-items-center footer-container flex-wrap'>
         
      <div>
        <p className="text-white fs-4"  > <span  style={{ letterSpacing: "3px", fontWeight: "700" }}>Nulook</span></p>

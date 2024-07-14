@@ -1,3 +1,20 @@
+.home-container{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  
+}
+.home-img{
+  height: 550px;
+  padding: 20px 0px 0px 20px;
+  
+}
+.home-img1{
+  height: 380px;
+}
+
 .images{
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -5,6 +22,11 @@
 .images:hover{
     transform: scale(1.2) ;
     
+}
+.home-sec-container{
+  height: 350px;
+  width: 40%;
+  background-color: #FAF9F6;
 }
 .anim-img{
     /* width: 200px;
@@ -24,6 +46,7 @@
   .text1{
     animation: textBounceStretch 3s 1;
     position: relative;
+    font-size: 40px;
   }
   
   @keyframes textBounceStretch {
@@ -52,5 +75,87 @@
       opacity: 1;
     }
   }
+  @media screen and (max-width: 360px) {
+   
+    .home{
+      height: 20vh;
+    }
+    .home-container {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
 
+    .home-img {
+      height: 300px; 
+    }
+    .home-img1{
+      display: none; 
+    }
+    .text1{
+      font-size: 50px;
+    }
+    .home-se2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .home-img{
+      padding: 2px;
+    }
+    .bg-bar{
+      display: none;
+    }
+    .home-sec-container{
+      height: 400px;
+      width: 85%;
+      margin-bottom: 16px;
+    }
+    .home-sec2-img{
+      display: none;
+    }
+    .home-sec2p{
+      font-size: 10px;
+      text-align: justify;
+    }
+  }
+  @media screen and (min-width:360px) and (max-width:780px) {
+    
+    .home{
+      height: 20vh;
+    }
+    .home-container {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
+
+    .home-img {
+      height: 300px; 
+    }
+    .home-img1{
+      display: none; 
+    }
+    .text1{
+      font-size: 50px;
+    }
+    .home-se2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .bg-bar{
+      display: none;
+    }
+    .home-sec-container{
+      height: 500px;
+      width: 70%;
+      margin-bottom: 16px;
+    }
+    .home-sec2-img{
+      display: none;
+    }
+  }
   

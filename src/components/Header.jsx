@@ -24,20 +24,22 @@ function Header() {
   return (
     <>
        <div className="">
-            <Navbar className="sticky-top" data-bs-theme="light">
+            <Navbar expand="lg" className="sticky-top" data-bs-theme="light">
               <Container>
-                <Navbar.Brand
+                <Navbar.Brand className="ms-auto"
                   style={{ letterSpacing: "3px", fontWeight: "700" }}
                   
                 >
                   NuLook
                 </Navbar.Brand>
-                <Nav className="">
-                  <Link className=" navbar-link" style={{textDecoration:'none'}} to={'/'} ><a  >Home</a></Link>
-                  <Link className=" navbar-link" style={{textDecoration:'none'}} to={'/services'}> <a >Services</a></Link>
-                  <Link className=" navbar-link" style={{textDecoration:'none'}} to={'/team'}><Nav >Team</Nav></Link>
-                  <Link className=" navbar-link" style={{textDecoration:'none'}} to={'/booking'}> <a >Booking</a></Link>
-                </Nav>
+                <Navbar.Toggle aria-controls="navbarNav" />
+                <Navbar.Collapse id="navbarNav">
+                <Nav className="mx-auto">
+              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/services">Services</Link>
+              <Link className="nav-link" to="/team">Team</Link>
+              <Link className="nav-link" to="/booking">Booking</Link>
+            </Nav>
                 { loginStatus?
                 <Link to={'/profile'}>
                 <button className="btn ">
@@ -51,7 +53,7 @@ function Header() {
                   Login
                 </button>
                  </Link>}
-                
+                 </Navbar.Collapse>
               </Container>
             </Navbar>
             <hr className="ms-5 me-5 mt-1" />

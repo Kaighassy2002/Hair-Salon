@@ -5,6 +5,7 @@ import Header from "../components/Header";
 
 import { getUserBookingAPI } from "../server/allAPI";
 import { useNavigate } from "react-router-dom";
+import '../css/profile.css'
 
 function Profile() {
   const navigate = useNavigate()
@@ -57,12 +58,15 @@ function Profile() {
         <Header />
 
         <section style={{ overflow: "hidden" }} className="mt-4 ">
-          <div className="row">
+        <div className="text-end">
+              <button onClick={logout} className="fw-bolder pe-1 btn">Logout <i className="fa-solid fa-arrow-right-from-bracket "></i></button>
+            </div>
+          <div className="row ">
             <div
-              style={{ height: "90vh" }}
-              className="col-lg-2 bg-dark-subtle text-center"
+              
+              className="col-lg-2 bg-dark-subtle text-center profile"
             >
-              <div className="pt-5">
+              <div className="profile-user">
                 <h3 className="text-black mb-4">{username}</h3>
                 <span>{email}</span><br />
               </div>
@@ -70,7 +74,7 @@ function Profile() {
 
             <div className="col-lg-1"></div>
             <div className="col-lg-7">
-              <div className="mt-5">
+              <div className="mt-5 ">
                 <div>
                   <div className="">
                     <button className="btn btn-primary ">
@@ -80,7 +84,7 @@ function Profile() {
                   {userbookings?.length > 0 ?
                     userbookings.slice().reverse().map((booking, index) => (
                       <div key={index} className="mt-4 mb-4">
-                        <p className="pe-5 ">
+                        <p className=" user-booking ">
                           Dear Customer, <br />
                           <p>Thank you for scheduling your appointment for {booking?.cutting} {booking?.coloring} {booking?.styling} services on {booking?.date}, at {booking?.time}. We are excited to see you and hope you have a wonderful experience with our team.</p>
                         </p>
@@ -93,7 +97,7 @@ function Profile() {
               </div>
             </div>
             <div className="col-lg-2">
-              <button onClick={logout} className="fw-bolder pe-1 btn">Logout <i className="fa-solid fa-arrow-right-from-bracket "></i></button>
+              {/* <button onClick={logout} className="fw-bolder pe-1 btn">Logout <i className="fa-solid fa-arrow-right-from-bracket "></i></button> */}
             </div>
           </div>
         </section>

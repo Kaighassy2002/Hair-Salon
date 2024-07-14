@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, FloatingLabel, Form, Row, Alert } from 'react-bootstrap';
+import { Col, FloatingLabel, Form, Row, Alert, Button } from 'react-bootstrap';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -158,8 +158,9 @@ function Booking() {
                 * Please select date
               </span>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DemoContainer components={['DatePicker']}>
+                <DemoContainer  components={['DatePicker']}>
                   <DatePicker
+                  className='datecontainer'
                     label='Preferred Date'
                     value={formData.date}
                     onChange={handleDateChange}
@@ -177,9 +178,10 @@ function Booking() {
               <span style={{ fontSize: '12px' }} className='text-danger text-end'>
                 * Please select a time between 10:00 AM to 4:00 PM
               </span>
-              <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DemoContainer components={['TimeField']}>
+              <LocalizationProvider dateAdapter={AdapterDayjs} >
+                <DemoContainer className='datecontainer'  components={['TimeField']} >
                   <TimeField
+                    
                     label='Preferred Time'
                     value={formData.time}
                     onChange={handleTimeChange}
@@ -250,9 +252,10 @@ function Booking() {
               Please complete all required fields correctly.
             </Alert>
           ) : null}
-          <button onClick={handleSubmit} className='btn btn-outline-info d-grid col-6 mx-auto mt-5'>
-            Take Appointment
-          </button>
+           <Button  onClick={handleSubmit} className='mt-5 ' variant="primary" size="md">
+           Take Appointment
+        </Button>
+          
         </div>
       </section>
       <ToastContainer position='top-center' theme='colored' autoClose={3000} />

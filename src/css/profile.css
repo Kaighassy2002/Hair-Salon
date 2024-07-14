@@ -1,0 +1,29 @@
+.profile{
+    height: 100vh;
+}
+.user-booking{
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 360px){
+    .profile{
+        height: 20vh;
+        
+    }
+    .user-booking{
+        padding-left: 5px;
+    }
+    
+}
+@media screen and (min-width:360px) and (max-width:780px) {
+    .profile{
+        height: 20vh;
+        
+        
+    }
+    .user-booking{
+        padding-left: 5px;
+    }
+    
+
+}

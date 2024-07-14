@@ -9,6 +9,7 @@ import technicians from "../images/tech.jpg";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
+
 function Team() {
   useEffect(()=>{
     AOS.init()
@@ -21,7 +22,7 @@ function Team() {
           <section  className='bg-black mb-3 p-4'>
             <div className="p-3 text-center">
               <h4 style={{letterSpacing:"1.8rem"}} className='text-white-50 fs-2 bolder'>OUR TEAM</h4>
-              <div className='d-flex justify-content-evenly p-4 mt-3'>
+              <div className='d-flex justify-content-evenly p-4 mt-3 flex-wrap '>
                 <a href="#stylist"><Button  style={{letterSpacing:".4rem"}} variant="outline-light">Stylist</Button>{' '}</a>
               <a href="#colourists"><Button style={{letterSpacing:".4rem"}} variant="outline-light">Colourists</Button>{' '}</a>
               <a href="#technicians"><Button style={{letterSpacing:".4rem"}} variant="outline-light">Technicians</Button>{' '}</a>
@@ -38,7 +39,7 @@ function Team() {
               <img  className='img-fluid' src={salon}alt="" />
               </div>
           </Col>
-          <Col className='d-flex justify-content-center align-items-center flex-column' >
+          <Col sm={12} lg={6} className='d-flex justify-content-center align-items-center flex-column team-details' >
           <div data-aos="fade-left">
             <h4 className='text-secondary '>Stylist</h4>
             <p>In our salon, Nulook, we believe that a skilled hair stylist is the embodiment of artistry, technical prowess, and interpersonal finesse. With a deep understanding of hair dynamics and an impeccable eye for aesthetics, our stylists seamlessly transform hair into personalized works of art that reflect both their creative vision and the client's individuality. Beyond their mastery of scissors and color palettes, our stylists are expert communicators, adept at deciphering clients' desires and concerns to tailor each experience to perfection. Whether crafting intricate updos for special occasions or executing precision cuts for everyday elegance, their dedication to detail is unwavering. However, for us, it's not just about the hair—it's about fostering a sense of warmth and belonging. In our salon chair, transformations extend beyond the physical, empowering clients with newfound confidence and self-assurance. With each snip and stroke, our stylists weave not just strands of hair but also connections and transformations, leaving a lasting impression long after the salon visit ends.</p>
@@ -46,7 +47,7 @@ function Team() {
           </Col>
         </Row>
         <Row id='colourists' className='mt-3 pt-3 pb-4'>
-          <Col className='d-flex justify-content-center align-items-center flex-column'>
+          <Col sm={12} lg={6} className='d-flex justify-content-center align-items-center flex-column'>
          <div data-aos="fade-right" >
             <h4 className='text-secondary' >Colourists</h4>
             <p>At Nulook, our proficient hair colorists are not just stylists, they're artists dedicated to transforming hair into stunning masterpieces. With a deep understanding of color theory and an eye for detail, they expertly blend shades to create bespoke hues tailored to each client's skin tone and personal style. From subtle balayage to bold fantasy colors, every application is approached with meticulous care and attention. Beyond technical skill, our colorists excel in communication, listening attentively to clients' desires and offering expert advice to achieve their hair color goals. A visit to our salon is more than just a makeover—it's a journey of self-expression and discovery. With our skilled colorists, clients emerge with hair that not only looks beautiful but also reflects their inner confidence and individuality.</p>
@@ -58,7 +59,7 @@ function Team() {
           </Col>
         </Row>
         <Row id='technicians' className='mt-3 pt-3 pb-4'>
-          <Col >
+          <Col sm={12} lg={6}>
             <div data-aos="zoom-in" >
               <img  className='img-fluid' src={technicians}alt="" />
               </div>

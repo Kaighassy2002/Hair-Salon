@@ -10,8 +10,8 @@ function CardFloting() {
         
       >
          
-        <div style={{height:"50vh"}} className=" d-flex justify-content-evenly  ">
-          <div className="card-section">
+        <div  className=" d-flex justify-content-evenly  flex-wrap cardfloat ">
+          <div className="card-section mb-5">
             <div class="card  shadow ">
               <div class="flip-card ">
                 <div class="flip-card__container">
@@ -22,7 +22,7 @@ function CardFloting() {
                         id="Layer_1"
                         viewBox="0 0 60 60"
                          className="fa-solid fa-hand-holding-heart backup"
-                        style={{ height: "4.25rem" }}
+                        // style={{ height: "4.25rem" }}
                       ></i>
 
                       
@@ -45,12 +45,12 @@ function CardFloting() {
               </div>
 
               <div class="inside-page ">
-              <img style={{height:"30vh",width:"100%"}} src={card} alt="" />
+              <img  src={card} alt="" />
                
               </div>
             </div>
           </div>
-          <div className="card-section">
+          <div className="card-section mb-5">
             <div class="card  shadow ">
               <div class="flip-card ">
                 <div class="flip-card__container">
@@ -83,12 +83,12 @@ function CardFloting() {
               </div>
 
               <div  class="inside-page  ">
-              <img style={{height:"30vh",width:"100%"}} src={card2} alt="" />
+              <img src={card2} alt="" />
                
               </div>
             </div>
           </div>
-          <div className="card-section">
+          <div className="card-section mb-5">
             <div class="card  shadow ">
               <div class="flip-card ">
                 <div class="flip-card__container">
@@ -121,7 +121,7 @@ function CardFloting() {
               </div>
 
               <div class="inside-page ">
-              <img style={{height:"30vh",width:"100%"}} src={card3} alt="" />
+              <img  src={card3} alt="" />
                
               </div>
             </div>
